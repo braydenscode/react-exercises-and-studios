@@ -1,10 +1,12 @@
 .choresText {
    color: darkslateblue;
    font-size: large;
-   text-decoration: underline;
    font-style: italic;
+   text-align: left;
 }
 
 .choresHeading {
    text-align: left;
+   text-decoration: underline;
+   padding: 3px;
 }

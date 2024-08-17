@@ -1,9 +1,12 @@
 .movieText {
-   color: darkslategray;
+   color: rgb(75, 0, 85);
    text-align: left;
    font-size: larger;
+   background-color: cadetblue;
+   padding: 2px;
 }
 
 .movieHeading {
    color: darkslategray;
+   padding: 3px;
 }
