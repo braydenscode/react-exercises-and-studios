@@ -1,8 +1,8 @@
 .movieText {
-   color: rgb(75, 0, 85);
+   color: cadetblue;
    text-align: left;
    font-size: larger;
-   background-color: cadetblue;
+   background-color: rgb(150, 0, 0);
    padding: 2px;
 }
 
