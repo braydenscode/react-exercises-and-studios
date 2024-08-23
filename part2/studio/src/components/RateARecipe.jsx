@@ -1,7 +1,14 @@
+import RecipeData from './recipe.json'
+
 let stars = ["⭐", "⭐ ⭐", "⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐ ⭐"];
 
-function RateARecipe() {
-  return stars;
+function RateARecipe(props) {
+
+  function GiveRating() {
+    return <h3>{stars[props.rating -1]}</h3>;
+  }
+
+ return props.rating > 0 && props.rating < 6 ? <GiveRating /> : null;
 }
 
 export default RateARecipe;

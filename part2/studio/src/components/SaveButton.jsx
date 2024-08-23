@@ -1,3 +1,5 @@
+import RecipeData from './recipe.json'
+
 import "./styling.css";
 
 function SaveButton() {

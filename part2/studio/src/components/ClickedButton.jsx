@@ -1,4 +1,14 @@
+import RecipeData from './recipe.json'
+
 function ClickedButton() {
+  function handleClick() {
+    alert("Pin removed from board");
+  }
+  return (
+    <button id="clickedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
   return;
 }
 

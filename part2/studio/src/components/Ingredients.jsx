@@ -1,5 +1,9 @@
+import RecipeData from './recipe.json'
+
 function IngredientList() {
-   return;
+   return <div>
+    <h3>Ingredients</h3>
+   </div>;
  }
  
  export default IngredientList;
