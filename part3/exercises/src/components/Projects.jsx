@@ -9,7 +9,7 @@ export default function MyProjects() {
    {
       setIndex(index + 1);
    }
-   else
+   else 
    {
       setIndex(0);
    }
@@ -17,15 +17,16 @@ export default function MyProjects() {
 
   let projects = data.projects;
   let project = projects[index];
-
+  
   return (
     <div>
       <button onClick={handleClick}>
         Next
       </button>
-      <h2>{project.canvas} by {project.designer}
+      <h2>{project.manufacturer} {project.model}
       </h2>
-      <img src={project.photoUrl} alt={project.alt} />
+      <p>{project.alt}</p>
+      <img src={project.photoUrl} alt={project.alt} height={600}/>
     </div>
   );
 }
