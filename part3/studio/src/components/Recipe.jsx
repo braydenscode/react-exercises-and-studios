@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.marthastewart.com/856421/coconut-layer-cake";
+   let authorPhoto = "https://www.marthastewart.com/thmb/WJ7eJizDmIzkAfiryYv7GzUWkaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/martha-stewart-fried-chicken-180-d111035_vert-173e3c60cce241afb72c89611640faef.jpg"
+   let authorName = "Martha Stewart";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%", width: "200px"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -17,7 +17,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["flour", "eggs", "vanilla", "milk", "coconut"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -49,7 +49,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+   <img src="https://www.marthastewart.com/thmb/lF4GjcRggwDpQAItdtcfYTAG4XE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/cakes_00126_vert-55b9b36bc12d485385cf76179a8f2c53.jpg" alt="" className="imageUpdates" height={500}/>
    );
 }
 
